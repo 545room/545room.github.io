@@ -117,6 +117,26 @@ p{
 	display: inline-block;
 }
 
+.background-fird__forth{
+	position: absolute;
+	top: -30px;
+	right: 680px;
+	max-width: 50px;
+	max-height: 50px;
+	z-index: -1;
+	display: inline-block;
+}
+
+.background-fird__fifth{
+	position: absolute;
+	top: 50px;
+	right: 750px;
+	max-width: 40px;
+	max-height: 40px;
+	z-index: -1;
+	display: inline-block;
+}
+
 .background-fifth{
 	position: absolute;
 	top: 120px;
@@ -153,6 +173,29 @@ p{
 	z-index: -1;
 	display: inline-block;
 }
+
+.background-fifth__forth{
+	position: absolute;
+	top: 120px;
+	left: 640px;
+	max-width: 60px;
+	max-height: 60px;
+	z-index: -1;
+	display: inline-block;
+}
+
+.background-fifth__fifth{
+	position: absolute;
+	top: 220px;
+	left: 710px;
+	max-width: 40px;
+	max-height: 40px;
+	z-index: -1;
+	display: inline-block;
+}
+
+
+
 header{
 	max-width: 1430px;
 	margin: 31px auto 80px;
@@ -203,13 +246,14 @@ header{
 }
 
 .header_phone-number{
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 500;
 	color: #0559BB;
 }
 
 
 .header_phone-schedule{
+	font-size: 15px;
 	color: #7D7D7D;
 }
 
@@ -280,7 +324,7 @@ header{
 	width: 294px;
 	height: 294px;
 	max-width: 294px;
-	border: 30px solid rgba(5, 89, 187, 0.35);
+	border: 25px solid rgba(5, 89, 187, 0.35);
 	background: rgba(5, 89, 187, 0.35);
 }
 
@@ -1477,6 +1521,10 @@ margin-left: 130px;
 
 .benefits-cat__block{
 	max-width: 390px;
+}
+
+.background-fird__forth, .background-fifth__fifth, .background-fifth__forth, .background-fird__fifth{
+	display: none;
 }
 }
 
