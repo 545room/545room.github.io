@@ -59,6 +59,10 @@ img{
     width: auto;
 }
 
+.left30{
+	margin-left: 30px;
+}
+
 header{
 	margin-top: 24px;
 }
@@ -154,6 +158,11 @@ footer{
 .sec-page-block{
 	padding: 40px 0;
 	background-color: #FBF0E8;
+}
+
+.fird-page-block{
+	padding: 40px 0;
+	background-color: #E2F2FE;
 }
 
 .sec-page-block__h1{
@@ -253,6 +262,13 @@ footer{
 	height: 8px;
 	width: 100%;
 	background-color: #FBF0E8;
+}
+
+.line-continer{
+	margin-top: 56px;
+	height: 8px;
+	width: 100%;
+	background-color: #E2F2FE;
 }
 
 .sec-page-block__item-50{
@@ -391,5 +407,13 @@ nav ul li{
 
 .bottom30{
 	margin-bottom: 30px;
+}
+
+.left30{
+	margin-left: 0;
+}
+
+.first-page-block__desc{
+	margin-bottom: 0px;
 }
 }
