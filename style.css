@@ -344,4 +344,52 @@ h3 {
 nav ul li{
 	margin-right: 20px;
 }
+
+.menu{
+	display: none;
+}
+
+.sec-page-block{
+	padding: 20px 0;
+}
+
+.sec-page-block__h1{
+	margin-bottom: 14px;
+	font-size: 32px;
+}
+
+.sec-page-block__main-desc{
+	margin-bottom: 14px;
+}
+
+.sec-page-block__main-img{
+	margin-top: 20px;
+	margin-right: 0;
+}
+
+.sec-page-block__item{
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 16px;
+}
+
+.col-191{
+	margin-top: 30px;
+	margin-left: 0;
+}
+
+.sec-page-block__item-50{
+	margin-top: 16px;
+	padding: 16px;
+	width: 100%;
+	border-radius: 16px;
+}
+
+.left-margin50 {
+    margin-left: 0;
+}
+
+.bottom30{
+	margin-bottom: 30px;
+}
 }
