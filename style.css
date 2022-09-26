@@ -166,7 +166,6 @@ footer{
 }
 
 .sec-page-block__h1{
-	margin-bottom: 24px;
 	font-size: 40px;
 	font-weight: 400;
 }
@@ -274,7 +273,7 @@ footer{
 .sec-page-block__item-50{
 	margin-top: 32px;
 	padding: 32px;
-	width: 41%;
+	width: 48%;
 	background-color: #fff;
 	border-radius: 24px;
 }
@@ -337,6 +336,30 @@ footer{
     border: 1px solid #D9D9D9;
 }
 
+.fird-page-fruititooty{
+	padding: 40px 0;
+	background-color: #d0ffdf;
+}
+
+.fird-page-selinger{
+	padding: 40px 0;
+	background-color: #fff;
+}
+
+.line-continer2{
+	margin-top: 56px;
+	height: 8px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.line-continer3{
+	margin-top: 56px;
+	height: 8px;
+	width: 100%;
+	background-color: #d0ffdf;
+}
+
 @media only screen and (max-width: 1055px) {
 .container{
 	padding: 0 15px;
@@ -365,7 +388,7 @@ nav ul li{
 	display: none;
 }
 
-.sec-page-block{
+.sec-page-block, .fird-page-block, .fird-page-selinger, .fird-page-fruititooty{
 	padding: 20px 0;
 }
 
