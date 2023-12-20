@@ -26,6 +26,8 @@
 
   jQuery('.marquee').marquee({
     duration: 30000,
+    startVisible: true,
+    duplicated: true
 });
 
 $(function(){
