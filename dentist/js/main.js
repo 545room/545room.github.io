@@ -146,4 +146,9 @@ item.addEventListener('click', function(e) {
   //update thingy
   activePanel = (activePanel === this) ? 0 : this;
 });
+
+jQuery('.marquee').marquee({
+  duration: 20000,
+});
+
 });
