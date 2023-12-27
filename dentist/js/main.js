@@ -103,48 +103,30 @@ once: true, // whether animation should happen only once - while scrolling down
 
 
 if($(window).width() >= 1200){
-$(document).ready(function () {
-  // Toggle service info on click
-  $('.service-block_item').on('click', function () {
-      // Get the service info block associated with the clicked item
-      var serviceInfo = $(this).find('.service-info');
-      
-      // Check if the service info block is not visible
-      if (!serviceInfo.hasClass('display-block-m')) {
-          // Hide other visible service info blocks and show the clicked one
-          $('.service-info.display-block-m').removeClass('display-block-m');
-          serviceInfo.addClass('display-block-m');
-      }
+  $(document).ready(function () {
+
+    $(".service-block_item").click(function(){
+      $(".service-block_item").each(function(){
+        $(this).find('.service-info').removeClass("display-block-m");
+        $(this).find('.service-block_item-arrow').removeClass("service-block_item-arrow-d");
+      });
+      $(this).find('.service-info').addClass("display-block-m");
+      $(this).find('.service-block_item-arrow').addClass("service-block_item-arrow-d");
+    });
+
+  });
+}
+
+$(document).ready(function(){
+  $('.service-block_item').click(function() {
+    if ($(this).find('.service-info').hasClass("display-block-m-m")) {
+      $(this).find('.service-info').removeClass("display-block-m-m");
+      $(this).find('.service-block_item-arrow').removeClass("service-block_item-arrow-d-m");
+    } else {
+      $(this).find(".service-info").addClass('display-block-m-m');
+      $(this).find('.service-block_item-arrow').addClass("service-block_item-arrow-d-m");
+    }
+    return false;
   });
 });
 
-$('.service-block_item').on("click", function(){  
-  $(".service-block_item-arrow.service-block_item-arrow-d").removeClass('service-block_item-arrow-d');
-  $(this).find(".service-block_item-arrow ").addClass('service-block_item-arrow-d');
-});
-}
-
-
-$('.service-block_item').on("click", function(){  
-$(".service-block_item-arrow").toggleClass('service-block_item-arrow-d');
-});
-
-
-var panelItem = document.querySelectorAll('.service-block_item-select'),
-bodyItem = document.querySelectorAll('.service-info');
-panelItem.__proto__.forEach = [].__proto__.forEach;
-
-var activePanel;
-panelItem.forEach(function(item, i, panelItem) {
-item.addEventListener('click', function(e) {
-  //show new thingy;
-  this.nextElementSibling.classList.add('display-block-m-m');
-  //hide old thingy
-  if (activePanel) {
-    activePanel.nextElementSibling.classList.remove('display-block-m-m');
-  }
-  //update thingy
-  activePanel = (activePanel === this) ? 0 : this;
-});
-
-});
