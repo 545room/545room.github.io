@@ -1351,4 +1351,9 @@ footer .contact .contact-block .contact-block_arrow {
     .about .about-desc {
         font-size: 17px
     }
+
+    footer .contact .contact-block .contact-block_arrow {
+        display: none;
+    }
+
 }
