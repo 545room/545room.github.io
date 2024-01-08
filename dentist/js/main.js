@@ -1,4 +1,3 @@
-//mobile menu
 let hamburger = document.querySelector('.menu-tab');
 let menu = document.querySelector('.menu-hide');
 
@@ -25,7 +24,7 @@ document.addEventListener('click', e => {
 })
 
 jQuery('.marquee').marquee({
-  duration: 30000,
+  duration: 20000,
   startVisible: true,
   duplicated: true
 });
@@ -107,7 +106,6 @@ once: true, // whether animation should happen only once - while scrolling down
 
 if($(window).width() >= 1200){
   $(document).ready(function () {
-
     $(".service-block_item").click(function(){
       $(".service-block_item").each(function(){
         $(this).find('.service-info').removeClass("display-block-m");
@@ -116,7 +114,6 @@ if($(window).width() >= 1200){
       $(this).find('.service-info').addClass("display-block-m");
       $(this).find('.service-block_item-arrow').addClass("service-block_item-arrow-d");
     });
-
   });
 }
 
@@ -131,12 +128,5 @@ $(document).ready(function(){
     }
     return false;
   });
-
-
-
-
-
-
-  
 });
 
